@@ -1,0 +1,28 @@
+	
+		/**---------------------------------------------------------------------------------------------------------**/
+		/*													SCROLLBOX STYLESHEET													*/
+		/**---------------------------------------------------------------------------------------------------------**/
+		*[data-scroll]{ 
+				position:relative;
+				overflow:hidden!important;
+				-webkit-user-select:none; 
+				-moz-user-select:none; 
+				-ms-user-select:none; 
+				-o-user-select:none; 
+				user-select:none;
+		}
+		*[data-scroll]:hover .scrollbarContainer{ opacity:1; }
+		
+		/**---------------------------------------------------------------------------------------------------------**/
+		.scrollbarContainer,
+		.scrollbarContainer .scrollbar{ position:absolute; }
+		.scrollbarContainer .scrollbar{ border-radius:4px; }
+		.scrollbarContainer .scrollbar.init{ transition:400ms; }
+		
+		.scrollbarContainer{ opacity:0 }
+		.scrollbarContainer.disable{ display:none; }
+		
+		/**---------------------------------------------------------------------------------------------------------**/
+		.scrollbarContainer.scroll-v{ left:auto;top:0; }
+		.scrollbarContainer.scroll-h{ left:0;top:auto; }
+		
